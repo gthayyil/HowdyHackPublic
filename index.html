@@ -27,8 +27,12 @@ We hope that everyone who comes across this website leaves here with an understa
     <div>
 	<br>
 	<br>
-	<button type="button" onclick="functionToExec()">Precious Cookies
-    	</button>
+	<button type="myprec" id="my_button"
+	onclick="functionToExec()">Your precious cookies
+	</button>
+	<button type="thanks" id="my_buttontwo"
+	onclick="functionToStop()">Clear your cookies
+	</button>
 	<br>
 	<br>
 	<img class="mons" src="photos/cookiemonster.jpg" width="40" height="40" alt="monster">
@@ -42,6 +46,12 @@ We hope that everyone who comes across this website leaves here with an understa
         				top: e.pageY+50
    			 	});
 			});
+		}
+		function functionToStop(){
+		alert('WHERE ARE YOU? WHERE DID THE COOKIES GO? NOOOOOOOOOOOOOOOOOO');
+		document.getElementById("my_buttontwo").style.visibility = "hidden";
+		$(document).unbind("mousemove");
+		$('.mons').hide();
 		}
 	</script>
     </div>
