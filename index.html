@@ -6,66 +6,55 @@
     <meta charset="UTF-8">
     <meta name = "description" content="HowdyHack 2020!">
     <title>Spies only...</title>
-	
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://www.streamscheme.com/wp-content/uploads/2020/04/poggers.png" type="image/x-icon"/>
+
 </head>
 
 <body style = "text-align: center">
-     <p>Howdy! This is an interactive website that will teach you about common hacking practices! <br>
-        We hope that everyone who comes across this website leaves here with an understanding of how to protect themselves from those who harbor ill intent!
-    </p>
-	
-    <img src = "photos/corporate.png" width = "256" height = "256 alt = "WorldWide Networking" >
-    <br>  
-	
-    <button type="button" onclick="alert('YOU HAVE TOUCHED MY PRECIOUS, YOUR COOKIES WILL LEAD ME TO YOU.YOUR INFORMATION IS MINE MUHAHAHAHAHAHA')">Precious Cookies
-    </button>
-    <br>
-    <br> 
-	<a href = "BaitandSwitch.html">Bait and Switch</a>
-    <br>
-	<a href = "Malware/CookieTheft.html">Malware and Cookie Theft</a>
-    <br>
-	<a href = "Eavesdropping/ManInMiddle.html">Eavesdropping and Man in the Middle (MITM)</a>
-    <br>
-	<a href = "Keylogging.html">Keylogging</a>
-    <br>
-	<a href = "Phishing.html">Phishing</a>
-    <br>
-	<a href = "WateringHoleAndWAP.html">Watering Hole Attacks</a>
-    <br>
-    <br>
-    <br>
-    <form>
-    
+     <p>Howdy! This is an interactive website that will teach you about common hacking practices!</p>
+
+    <button type="myprec"
+	onclick="functionToExec()">Precious Cookies
+	</button>
+	<img class="mons" src="cookiemonster.jpg" width="40" height="40" alt="monster">
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script type="text/javascript">
+function functionToExec(){
+alert('YOU HAVE TOUCHED MY PRECIOUS, YOUR COOKIES WILL LEAD ME TO YOU.YOUR INFORMATION IS MINE MUHAHAHAHAHAHA');
+$(document).mousemove(function(e){
+    $('.mons').offset({
+        left: e.pageX,
+        top: e.pageY
+    });
+});
+}
+
+</script>
+
+    <img src = "photos/space_meteor.png">
+     <br>    
+
     <!--Making this for the keylogging thing eventually-->
     <label for = "username">Enter username: </label>
     <input type="text" id = "username">
-    </form>
+
     <!--Just spacing for looks-->
+    <br>
     <!--These make entry tables-->
     <label for = "password">Enter password: </label>
     <input type="password" id = "password">
 
-
-    <br>
-    <input type="submit" value = "submit the form">
-
-    </form> 
-    
-
    
-
 </body>
 
 
 <footer style = "text-align: center">
     <hr />
-	<a href = "About.html">About Us</a>
+    <a href = "About.html">About Us</a>
+    <br>
+	    <a href = "BaitandSwitch.html">Bait and Switch</a>
     <br>
     <a href = "#top">Back to the top of the page</a>
-	<!--Just spacing for looks-->
 </footer>
 
 </html>
