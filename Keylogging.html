@@ -17,30 +17,29 @@
         </ul>
     </p>  
   <script type="text/javascript">
-  function FillKeylogged(f) {
-    f.keyloggeduser.value = f.guestuser.value;
-    f.keyloggedpass.value = f.guestpass.value;
+  function FillKeylogged() {
+    document.getElementById("use2").value = document.getElementById("use1").value;
+     document.getElementById("pass2").value = document.getElementById("pass1").value;
 }
 </script>
 Guest Information
 <br>
-<form>
 Username:
-<input type="text" name="guestuser">
+<input type="text" id="use1" name="guestuser">
 <br>
 Password:
-<input type="text" name="guestpass">
+<input type="text" id="pass1" name="guestpass"
 <br>
-<input type="checkbox" name="Keylogged" onclick="FillKeylogged(this.form)">
-<li>Check this button if you have inputted your username and password.</li>
+<button type="submit" id="my_button"
+	onclick="FillKeylogged()">Submit
+</button>
+<br>
 <P>
 <li>Keylogged Information</li>
 <br>
 Username:
-<input type="text" name="keyloggeduser">
+<input type="text" id="use2" name="keyloggeduser">
 Password:
-<input type="text" name="keyloggedpass">
-</form>
-      
+<input type="text" id="pass2" name="keyloggedpass">
 </body>
 </html>
