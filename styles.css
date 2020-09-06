@@ -103,10 +103,4 @@
     
   }
   
-  footer{
-    position: fixed;
-    background-color: tan;
-    padding-bottom: 10px;
-    z-index: 1;
-    bottom: 0;
-  }
+
