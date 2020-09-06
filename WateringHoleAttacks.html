@@ -27,16 +27,16 @@
 	<button type="illusion" id="my_buttontwo"
 	onclick="functionToStop()">Blue Pill
 	</button>
-	<img class="deer2" src="photos/deer2.jpg" width="40" height="40" >
-	<img class="deer" src="photos/deer.jpg" width="40" height="40" >
-	<img class="wateringhole" id="waterh" src="photos/wateringhole.png" width="40" height="40">
-	<img class="croc" id="croc" src="photos/crocodile.jpg" width="40" height="40">
+	<img class="deer2" src="photos/deer2.jpg" width="75" height="75" >
+	<img class="deer" src="photos/deer.jpg" width="75" height="75" >
+	<img class="wateringhole" id="waterh" src="photos/wateringhole.png" width="75" height="75">
+	<img class="croc" id="croc" src="photos/crocodile.jpg" width="75" height="75">
 	<script type="text/javascript">
 	document.getElementById("croc").style.visibility = "hidden";
 	document.getElementById("waterh").style.visibility = "visible";
 	function functionToExec(){
-	document.documentElement.style.setProperty("--x","800px");
-	document.documentElement.style.setProperty("--x2","800px");
+	document.documentElement.style.setProperty("--x","700px");
+	document.documentElement.style.setProperty("--x2","700px");
 	document.getElementById("croc").style.visibility = "visible";
 	document.getElementById("waterh").style.visibility = "hidden";
 	}
@@ -69,19 +69,19 @@
 }
 .croc{
  position: absolute;
- left: 800px;
+ left: 700px;
 }
 .wateringhole{
  position: absolute;
- left: 800px;
+ left: 700px;
 }
 @keyframes moving {
     0% {left: var(--x);}
-	100% {left: 800px;}
+	100% {left: 700px;}
 }
 @keyframes movingtwo {
     0% {left:	var(--x2);}
-	100% {left:  800px;}
+	100% {left:  700px;}
 }
 </style>
 <br/>
