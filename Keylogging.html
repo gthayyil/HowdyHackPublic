@@ -17,7 +17,7 @@
         </ul>
     </p>  
     
-<b>User Information</b>
+<!--b>User Information</b>
 <br><br>
 <form>
 Username:
@@ -36,8 +36,15 @@ Username:
 <br>
 Password:
 <input type="text" name="keypass">
-</form>
+</form-->
 
+function FillBilling(f) {
+  if(f.billingtoo.checked == true) {
+    f.billingname.value = f.shippingname.value;
+    f.billingcity.value = f.shippingcity.value;
+  }
+}
+    
 </body>
 <br/>
 <footer>
