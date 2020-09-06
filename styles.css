@@ -30,7 +30,7 @@ span{
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -39,7 +39,7 @@ span{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidebar a:hover {
   color: #f1f1f1;
 }
 
