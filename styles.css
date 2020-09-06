@@ -22,6 +22,15 @@ p.main{
   padding-top:20px;
 }
 
+img.BaitAndSwitch_image{
+  margin-top: 0px;
+  margin-right: 40px;
+  height: 256px;
+  width: 256px;
+
+  float: right;
+}
+
 img.main_image{
 float: left;  
 }
@@ -37,6 +46,7 @@ top: 0; /* Stay at the top */
 left: 0;
 background-color: #000000; /* Black */
 padding-top: 20px;
+overflow: scroll;
 }
 
 .sidebar p{
