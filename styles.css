@@ -10,9 +10,20 @@ html{
   background: tan;
 }
 
+html.index{
+  margin-left:200px;
+
+}
+
+
+
 p.main{
   font-size:15px;
   padding-top:20px;
+}
+
+.main_image{
+float: left;  
 }
 
 
@@ -69,7 +80,7 @@ padding: 0px 10px;
   
 }
 .header_shield_right {
-  right: 5  0px;
+  right: "50";
 
   
 }
