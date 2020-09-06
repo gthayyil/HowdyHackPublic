@@ -15,20 +15,17 @@ html.index{
 
 }
 
+img.BaitAndSwitch_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 p.main{
   font-size:15px;
   padding-top:20px;
-}
-
-img.BaitAndSwitch_image{
-  margin-top: 0px;
-  margin-right: 40px;
-  height: 256px;
-  width: 256px;
-
-  float: right;
 }
 
 img.main_image{
