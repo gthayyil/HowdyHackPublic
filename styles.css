@@ -1,18 +1,26 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src:url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+}
+
 html{
-  background-color:tan;
+  font-family: 'Press Start 2P';
+  font-size:12px;
+  background: tan;
+  ;
 }
 
-
-p{
-  color: black;
-  font-size:30px;
-  
+p.main{
+  font-size:15px;
+  padding-top:20px;
 }
+
 
 /* The sidebar menu */
 .sidebar {
 height: 100%;
-width: 200px; /* Set the width of the sidebar */
+width: 300px; /* Set the width of the sidebar */
 position: fixed; /* sets absolute position */
 z-index: 1; /* Stay on top of other pages */
 top: 0; /* Stay at the top */
@@ -21,15 +29,27 @@ background-color: #000000; /* Black */
 padding-top: 20px;
 }
 
+.sidebar p{
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+
+}
+
 /* The navigation menu links */
 .sidebar a {
-padding-top: 20px;
-padding-right: 20px;
-padding-bottom: 20px;
-padding-left: 20px;
+padding-top: 40px;
+padding-right: 15px;
+padding-bottom: 40px;
+padding-left: 15px;
 text-decoration: none;
 font-size: 25px;
-color: #818181;
+color: white;
 display: block;
 }
 
@@ -45,16 +65,12 @@ padding: 0px 10px;
 }
 
 .header_shield_left {
-  position: relative;
-  right: 300px;
-  top: 40px;
+  left:50px;
   
   
 }
 .header_shield_right {
-  position: relative;
-  left: 300px;
-  top: 40px;
+  right: 5  0px;
 
   
 }
