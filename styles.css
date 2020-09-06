@@ -14,7 +14,7 @@ p{
   height: 100%;
   width: 200px; /* Set the width of the sidebar */
   position: fixed; /* sets absolute position */
-  z-index: 1; /* Stay on top */
+  z-index: 1; /* Stay on top of other pages */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black */
