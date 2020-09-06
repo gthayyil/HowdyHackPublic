@@ -1,4 +1,4 @@
-<!--!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title> Keylogging</title>
@@ -17,63 +17,25 @@
         </ul>
     </p>  
     
-<!--b>User Information</b>
-<br><br>
-<form>
-Username:
-<input type="text" name="reguser">
-<br>
-Password:
-<input type="text" name="regpass">
-<br>
-<input type="checkbox" name="keyloggedtoo" onclick="FillKeylogged(this.form)">
-<em>Check this box if you are ready to continue.</em>
-<P>
-<b>Keylogged Information</b>
-<br><br>
-Username:
-<input type="text" name="keyuser">
-<br>
-Password:
-<input type="text" name="keypass">
-</form>
+<!--Making this for the keylogging thing eventually-->
+    <label for = "username">Enter username: </label>
+    <input type="text" id = "username">
+    </form>
+    <!--Just spacing for looks-->
+    <These make entry tables-->
+    <br>
+    <label for = "password">Enter password: </label>
+    <input type="password" id = "password">
+    <br>
+    <input type="submit" value = "submit the form">
+    <br>
+    <br>
+    <label for "keylogged password">Keylogged password: <id="password">
+    <input type="keylogged password" id = "password">
+    </form> 
+    <br>
+    <br>   
 
-  <applet code=  function FillBilling(f) {
-  if(f.billingtoo.checked == true) {
-    f.billingname.value = f.shippingname.value;
-    f.billingcity.value = f.shippingcity.value;
-  }
-}> </applet>
-          
-  
-</body>
-<br/>
-<footer>
-    <a href = "index.html">Click to go back</a>
-</footer>
-
-</html-->
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
-
-<input type="text" value="Hello World" id="myInput">
-<button onclick="myFunction()">Copy text</button>
-
-<p>The document.execCommand() method is not supported in IE8 and earlier.</p>
-
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
 
 </body>
 </html>
