@@ -1,4 +1,4 @@
- @font-face {
+  @font-face {
     font-family: 'Press Start 2P';
     src:url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -79,26 +79,12 @@
 
   div.main{
       line-height: 1.6;
-
-  }
-
-  .index{
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-  height: 100vh;
-  }
-
-  .intro{
-    margin-left: 160px; /* Same as the width of the sidebar */
+      margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
-    height:100vh;
+    height: 100vh;
+
   }
 
-  .what{
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    height:100vh;
-  }
   
 
   .header_shield_left {
@@ -112,7 +98,7 @@
 
     
   }
-
+  
   footer{
     position: fixed;
     background-color: tan;
@@ -120,3 +106,4 @@
     z-index: 1;
     bottom: 0;
   }
+
