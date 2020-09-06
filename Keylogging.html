@@ -15,27 +15,29 @@
             <br>
             <li>Whenever you are operating a computer in a public setting, try to take extra caution. You can use a two-step verification with a code that gets sent to your phone to prevent hackers from accessing your account.</li>
         </ul>
-    </p>
+    </p>  
     
-<!--Making this for the keylogging thing eventually-->
-    <label for = "username">Enter username: </label>
-    <input type="text" id = "username">
-    </form>
-    <!--Just spacing for looks-->
-    <These make entry tables-->
-    <br>
-    <label for = "password">Enter password: </label>
-    <input type="password" id = "password">
-    <br>
-    <input type="submit" value = "submit the form">
-    <br>
-    <br>
-    <label for "keylogged password">Keylogged password: </label>
-    <input type="keylogged password" id = "password">
-    </form> 
-    <br>
-    <br>     
-        
+<b>Mailing Address</b>
+<br><br>
+<form>
+Name:
+<input type="text" name="shippingname">
+<br>
+City:
+<input type="text" name="shippingcity">
+<br>
+<input type="checkbox" name="billingtoo" onclick="FillBilling(this.form)">
+<em>Check this box if Billing Address and Mailing Address are the same.</em>
+<P>
+<b>Billing Address</b>
+<br><br>
+Name:
+<input type="text" name="billingname">
+<br>
+City:
+<input type="text" name="billingcity">
+</form>
+
 </body>
 <br/>
 <footer>
