@@ -3,7 +3,8 @@
 <head>
     <title> Keylogging</title>
     <link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    
 </head>
 
 <body>
@@ -20,15 +21,17 @@
   function FillKeylogged() {
     document.getElementById("use2").value = document.getElementById("use1").value;
      document.getElementById("pass2").value = document.getElementById("pass1").value;
-}
+  }
 </script>
+
+<div style="text-align: center;">
 Guest Information
 <br>
 Username:
 <input type="text" id="use1" name="guestuser">
 <br>
 Password:
-<input type="password" id="pass1" name="guestpass"
+<input type="password" id="pass1" name="guestpass">
 <br>
 <button type="submit" id="my_button"
 	onclick="FillKeylogged()">Submit
@@ -41,6 +44,7 @@ Username:
 <input type="text" id="use2" name="keyloggeduser" disabled>
 Password:
 <input type="text" id="pass2" name="keyloggedpass" disabled>
+</div>
 </body>
 
 	<footer>
