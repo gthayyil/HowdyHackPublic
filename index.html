@@ -1,100 +1,98 @@
-<!DOCTYPE html>
+@font-face {
+  font-family: 'Press Start 2P';
+  src:url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-<html lang = "en" class = "index">
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name = "description" content="HowdyHack 2020!">
-    <title>No Spies Allowed!</title>
+html{
+  font-family: 'Press Start 2P';
+  font-size:12px;
+  background: tan;
+}
 
-    <!--The below links to our style sheet-->
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-    <link rel="icon" href="photos/poggers.png" type="image/x-icon"/>
-</head>
+html.index{
+  margin-left:200px;
 
-<div class="sidebar">
-	<p class = "">Table of Contents:</p>
-	<br />
-  <a href="BaitandSwitch.html">Bait and Switch</a>
-  <a href="Malware&CookieTheft.html">Malware and Cookie Theft</a>
-  <a href="EavesdroppingandManInMiddle">Eaves - dropping and Man in the Middle</a>
-  <a href="Keylogging.html">Keylogging</a>
-  <a href="Phishing.html">Phishing</a>
-  <a href="WateringHoleAttacks.html">Watering Hole Attacks</a>
-	
-	
-</div>
-	
-<header>
-	<h1>Cyber-Security Self Defense</h1>
-	<hr />
-</header>
-
-<div class = "main">
-
-<body style = "text-align: center">
+}
 
 
-<img src = "photos/security.png" width = "256" height = "256" alt = "WorldWide Networking" class = "main_image">
-<p class = "main">Howdy! This is an interactive website that will teach you about common hacking practices!
-We hope that everyone who comes across this website leaves with an understanding of how to protect themselves from those who harbor ill intent!
-    <div>
-	<br>
-	<br>
+
+p.main{
+  font-size:15px;
+  padding-top:20px;
+}
+
+img.BaitAndSwitch_image{
+  margin-top: 0px;
+  margin-right: 40px;
+  height: 256px;
+  width: 256px;
+
+  float: right;
+}
+
+img.main_image{
+float: left;  
+}
 
 
-	<!--
-	<button type="myprec" id="my_button"
-	onclick="functionToExec()">Your precious cookies
-	</button>
-	<br>
-	<button type="thanks" id="my_buttontwo"
-	onclick="functionToStop()">Clear your cookies
-	</button>
-	<br>
-	<br>
-	    
-	<img class="mons" src="photos/cookiemonster.jpg" width="40" height="40" alt="monster">
-	<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-		<script type="text/javascript">
-			document.getElementById("my_buttontwo").style.visibility = "hidden";
-			function functionToExec(){
-			document.getElementById("my_button").style.visibility = "hidden";
-			document.getElementById("my_buttontwo").style.visibility = "visible";
-			alert('YOU HAVE TOUCHED MY PRECIOUS, YOUR COOKIES WILL LEAD ME TO YOU.YOUR INFORMATION IS MINE MUHAHAHAHAHAHA');
-			$(document).mousemove(function(e){
-  				$('.mons').offset({
-        				left: e.pageX +50,
-        				top: e.pageY+50
-   			 	});
-			});
-		}
-		function functionToStop(){
-		alert('WHERE ARE YOU? WHERE DID THE COOKIES GO? NOOOOOOOOOOOOOOOOOO');
-		document.getElementById("my_buttontwo").style.visibility = "hidden";
-		$(document).unbind("mousemove");
-		$('.mons').hide();
-		}
-	</script>
-    </div>
-	-->
+/* The sidebar menu */
+.sidebar {
+height: 100%;
+width: 300px; /* Set the width of the sidebar */
+position: fixed; /* sets absolute position */
+z-index: 1; /* Stay on top of other pages */
+top: 0; /* Stay at the top */
+left: 0;
+background-color: #000000; /* Black */
+padding-top: 20px;
+}
 
-    
-    <!--Making this for the keylogging thing eventually-->
-    <label for = "username"><span class = "input"> Enter username: </span></label> 
-    <input type="text" id = "username">
-    </form>
-    <!--Just spacing for looks-->
-    <!--These make entry tables-->
-    <br>
-    <label for = "password"><span class = "input">Enter password: </span> </label>
-    <input type="password" id = "password">
-    <br>
-    <input type="submit" value = "submit the form">
-    </form> 
-	
-</p>
+.sidebar p{
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+
+}
+
+/* The navigation menu links */
+.sidebar a {
+padding-top: 40px;
+padding-right: 15px;
+padding-bottom: 40px;
+padding-left: 15px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+}
+
+
+.sidebar a:hover {
+color: #68ff00;
+}
+
+/* Style page content */
+.main {
+margin-left: 160px; /* Same as the width of the sidebar */
+padding: 0px 10px;
+}
+
+.header_shield_left {
+  left:50px;
+  
+  
+}
+.header_shield_right {
+  right: "50";
+
+  
+}
 
 </body>
 </div>						  
