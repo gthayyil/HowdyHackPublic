@@ -42,7 +42,7 @@
 	}
 	function functionToStop(){
 	document.documentElement.style.setProperty("--x","200px");
-	document.documentElement.style.setProperty("--x2","200px");
+	document.documentElement.style.setProperty("--x2","1200px");
 	document.getElementById("croc").style.visibility = "hidden";
 	document.getElementById("waterh").style.visibility = "visible";
 	}
@@ -51,7 +51,7 @@
 <style>
 :root{
 	--x:200px;
-	--x2:600px;
+	--x2:1200px;
 }
 .deer{
     animation-duration: 5s;
@@ -80,8 +80,8 @@
 	100% {left: 600px;}
 }
 @keyframes movingtwo {
-    0% {left:	1200px;}
-	100% {left:  var(--x2);}
+    0% {left:	var(--x2);}
+	100% {left:  600px;}
 }
 </style>
 <br/>
