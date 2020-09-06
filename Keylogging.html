@@ -37,33 +37,32 @@
     <br-->   
 
   <script type="text/javascript">
-  function FillBilling(f) {
-  if(f.billingtoo.checked == true) {
-    f.billingname.value = f.shippingname.value;
-    f.billingcity.value = f.shippingcity.value;
+  function FillKeylogged(f) {
+  if(f.Keylogged.checked == true) {
+    f.keyloggeduser.value = f.guestuser.value;
+    f.keyloggedpass.value = f.guestpass.value;
   }
 }
 </script>
     
-<b>Mailing Address</b>
-<br><br>
+Guest Information
+<br>
 <form>
-Name:
-<input type="text" name="shippingname">
+Username:
+<input type="text" name="guestuser">
 <br>
-City:
-<input type="text" name="shippingcity">
+Password:
+<input type="text" name="guestpass">
 <br>
-<input type="checkbox" name="billingtoo" onclick="FillBilling(this.form)">
-<em>Check this box if Billing Address and Mailing Address are the same.</em>
+<input type="checkbox" name="Keylogged" onclick="FillKeylogged(this.form)">
+    <li>Check this button if you have inputted your username and password.</li>
 <P>
-<b>Billing Address</b>
-<br><br>
-Name:
-<input type="text" name="billingname">
+Keylogged Information
 <br>
-City:
-<input type="text" name="billingcity">
+Username:
+<input type="text" name="keyloggeduser">
+<Password:
+<input type="text" name="keyloggedpass">
 </form>
       
 </body>
