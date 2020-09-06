@@ -18,8 +18,69 @@
             <li>The Virtual Private Network (VPN) remains your safest option when using any wireless access.</li> 
         </ul>
     </p>
-
+	<button type="truth" id="my_button"
+	onclick="functionToExec()">Red Pill 
+	</button>
+	<button type="illusion" id="my_buttontwo"
+	onclick="functionToStop()">Blue Pill
+	</button>
+	<img class="deer2" src="photos/deer2.jpg" width="40" height="40" >
+	<img class="deer" src="photos/deer.jpg" width="40" height="40" >
+	<img class="wateringhole" id="waterh" src="photos/wateringhole.jpg" width="40" height="40">
+	<img class="croc" id="croc" src="photos/wateringhole.jpg" width="40" height="40">
+	<script type="text/javascript">
+	document.getElementById("croc").style.visibility = "hidden";
+	document.getElementById("waterh").style.visibility = "visible";
+	function functionToExec(){
+	document.documentElement.style.setProperty("--x","600px");
+	document.documentElement.style.setProperty("--x2","600px");
+	document.getElementById("croc").style.visibility = "visible";
+	document.getElementById("waterh").style.visibility = "hidden";
+	}
+	function functionToStop(){
+	document.documentElement.style.setProperty("--x","200px");
+	document.documentElement.style.setProperty("--x2","200px");
+	document.getElementById("croc").style.visibility = "hidden";
+	document.getElementById("waterh").style.visibility = "visible";
+	}
+	</script>
 </body>
+<style>
+:root{
+	--x:200px;
+	--x2:200px;
+}
+.deer{
+    animation-duration: 5s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+.deer2{
+    animation-duration: 5s;
+    animation-name: movingtwo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+.croc{
+ position: absolute;
+ left: 600px;
+}
+.wateringhole{
+ position: absolute;
+ left: 600px;
+}
+@keyframes moving {
+    0% {left: var(--x);}
+	100% {left: 600px;}
+}
+@keyframes movingtwo {
+    0% {left: var(--x2);}
+	100% {left: 600;}
+}
+</style>
 <br/>
 <footer>
     <a href = "index.html">Click to go back</a>
