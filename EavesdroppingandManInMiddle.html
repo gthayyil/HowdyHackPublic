@@ -21,11 +21,61 @@
         </ul>
         
     </p>
-
+	<br>
+	<button type="myprec" id="my_button"
+	onclick="functionToExec()">Man in the middle
+	</button>
+	<button type="thanks" id="my_buttontwo"
+	onclick="functionToStop()">Normal communication
+	</button>
+	<br>
+	<br>
+	<img class="bal" src="photos/pingpongbal.jpg" width="40" height="40" alt="monster">
+	<img class="hack" id="hacker" src="photos/hacker.jpg" width="75" height="75" alt="hacker align=middle">
+	<br>
+	
+	<script type="text/javascript">
+	document.getElementById("hacker").style.visibility = "hidden";
+	function functionToExec(){
+	document.documentElement.style.setProperty("--x","600px");
+	document.getElementById("hacker").style.visibility = "visible";
+	}
+	function functionToStop(){
+	document.documentElement.style.setProperty("--x","1200px");
+	document.getElementById("hacker").style.visibility = "hidden";
+	}
+	</script>
 </body>
+<style>
+:root{
+	--x:1200px;
+}
+.hack{
+ position: absolute;
+ left: 600px;
+}
+
+.bal{
+    animation-duration: 5s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes moving {
+    0% {left: 200px;}
+	50% {left: var(--x);}
+	100% {left: 200px;}
+}
+</style>
 <br/>
 <footer>
+    <br>
+	<br>
     <a href = "index.html">Click to go back</a>
+	<br>
+	<br>
 </footer>
 
 </html>
