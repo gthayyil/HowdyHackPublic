@@ -43,3 +43,16 @@ p{
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
+
+.header_shield_left {
+    position: relative;
+    right: 40px;
+    
+    
+}
+.header_shield_left {
+    position: relative;
+    left: 40px;
+ 
+    
+}
