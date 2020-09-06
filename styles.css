@@ -80,8 +80,8 @@
   div.main{
       line-height: 1.6;
       margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    height: 100vh;
+      padding: 0px 10px;
+      height: 100vh;
 
   }
 
@@ -106,4 +106,3 @@
     z-index: 1;
     bottom: 0;
   }
-
