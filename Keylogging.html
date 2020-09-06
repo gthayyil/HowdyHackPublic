@@ -17,12 +17,12 @@
         </ul>
     </p>  
     
-<!--Making this for the keylogging thing eventually-->
+<!--Making this for the keylogging thing eventually>
     <label for = "username">Enter username: </label>
     <input type="text" id = "username">
     </form>
-    <!--Just spacing for looks-->
-    <These make entry tables-->
+    <!--Just spacing for looks>
+    <These make entry tables>
     <br>
     <label for = "password">Enter password: </label>
     <input type="password" id = "password">
@@ -34,8 +34,16 @@
     <input type=id >
     </form> 
     <br>
-    <br>   
+    <br-->   
 
-
+  <script type="text/javascript">
+  function FillBilling(f) {
+  if(f.billingtoo.checked == true) {
+    f.billingname.value = f.shippingname.value;
+    f.billingcity.value = f.shippingcity.value;
+  }
+}
+</script>
+      
 </body>
 </html>
